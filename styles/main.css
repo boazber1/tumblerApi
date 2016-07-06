@@ -1,0 +1,132 @@
+/*----------------------------------
+STYLE
+-----------------------------------*/
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    background-color: azure;
+    height: 100%;
+}
+
+.showPic{
+    width: 96%;
+    height: 33%;
+    background-color: lightgreen;
+    border-radius: 8%;
+    margin: 5% auto;
+    border: solid 1px black;
+}
+
+.myName{
+    width: 100%;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    background-color: lightseagreen;
+    margin-top: 0;
+}
+
+.divOfDivs{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+img {
+    width: 94%;
+    height: 94%;
+    padding: 7% 4% 4% 7% ;
+    float: left;
+    margin: 0 auto;
+    border-radius: 15%;
+}
+
+
+/*------------------------------------
+Media Queries
+--------------------------------------*/
+@media only screen/*Tablet design*/
+and (min-width: 586px){
+
+    .showPic {
+        position:relative;
+        width: 48%;
+        height: 33%;
+        display: inline-block;
+        border-radius: 8%;
+        margin-left: 9px;
+        margin-top: 10px;
+        border: solid 1px black;
+    }
+
+    .divOfDivs{
+        height:90%;
+    }
+
+    img{
+        padding: 6px;
+        float: left;
+        margin-left: 7px;
+        margin-top: 4px;
+        border-radius: 22px;
+    }
+}
+
+@media only screen/*Laptop design*/
+and (min-width: 829px)
+and (max-width: 1600px) {
+
+
+    .showPic {
+        width: 31%;
+        height: 25%;
+        display: inline-block;
+        border-radius: 8%;
+        margin-left: 16px;
+        margin-bottom: 10px;
+        border: solid 1px black;
+    }
+
+    img {
+        padding: 6px;
+        margin-left: 7px;
+        margin-top: 4px;
+        border-radius: 22px;
+    }
+
+}
+
+@media only screen/*Home computers big screen design*/
+and (min-width: 1601px) {
+
+    .divOfDivs{
+        width: 1712px;
+        height: 777px;
+    }
+
+    .showPic {
+        width: 407px;
+        height: 238px;
+        display: inline-block;
+        border-radius: 20px;
+        margin-left: 17px;
+        margin-bottom: 10px;
+        border: solid 1px black;
+    }
+
+    img {
+        padding: 8px;
+        margin-left: 10px;
+        margin-top: 8px;
+        border-radius: 29px;
+    }
+
+}
+

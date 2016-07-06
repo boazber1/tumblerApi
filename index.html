@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body  data-ng-app="myApp"><!-- Connecting to my angular app through ng-app directive  -->
+<header>
+    <h1 class="myName">Boaz Berebi</h1>
+</header>
+
+
+<div class="divOfDivs" ng-controller="myCtrl"><!-- Using myCtrl in order to manipulate the DOM -->
+    <div class="showPic" ng-repeat="photo in photoPath2"><!-- Cycling over to create 12 div tags with the require image -->
+        <!--<h3>12</h3>-->
+        <img ng-src="{{photo}}"><!-- Injecting our photos into any one of our 12 divs -->
+
+    </div>
+
+</div>
+<script src="vendor/angular.js" type="text/javascript"></script>
+<script src="scripts/app.js" type="text/javascript"></script>
+
+</body>
+</html>
+
